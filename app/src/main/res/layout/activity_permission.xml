@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".PermissionActivity">
+
+    <ImageView
+        android:id="@+id/img_permission_picture"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <Button
+        android:textColor="@color/colorWhite"
+        android:text="choose a picture from gallery"
+        android:id="@+id/btn_permission_gallery"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

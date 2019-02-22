@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:id="@+id/card_studentRow_parent"
+    android:layout_marginRight="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="4dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/rel_studentRow_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                tools:text="mojtaba"
+                android:id="@+id/txt_studentRow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="16sp"
+                tools:text="nekooei"
+                android:layout_margin="8dp"
+                android:layout_below="@id/txt_studentRow_name"
+                android:id="@+id/txt_studentRow_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txt_studentRow_field"
+                android:layout_below="@+id/txt_studentRow_family"
+                tools:text="android developer"
+                android:layout_margin="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:layout_above="@id/txt_studentRow_field"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_studentRow_delete"
+                app:srcCompat="@drawable/ic_delete_orange_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_studentRow_edit"
+                android:layout_margin="8dp"
+                android:layout_above="@id/txt_studentRow_field"
+                android:layout_toLeftOf="@id/img_studentRow_delete"
+                app:srcCompat="@drawable/ic_edit_orange_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

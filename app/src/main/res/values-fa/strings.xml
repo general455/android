@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">آموزش xml</string>
+    <string name="buttonText">کلیک سایت</string>
+    <string name="text">تست</string>
+    <string name="btn_main">لایه های خطی</string>
+    <string name="btn_viewProfile">مشاهده پروفایل</string>
+    <string name="btn_editProfile">ویرایش پروفایل</string>
+    <string name="dialog_alert">برنامه ای برای اینکه به درستی کار بکند نیاز دارد تا به گالری شما دسترسی داشته باشد لطفا دسترسی لازم را بدهید</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity">
+
+    <ImageView
+        android:id="@+id/img_relative_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_realtive_buttonFrame"
+        android:layout_below="@+id/img_relative_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_style_clickable"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_below="@+id/img_relative_profile"
+            android:id="@+id/btn_relative_viewProfile"
+            android:text="View Profile"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="@color/gray600"
+            android:background="@drawable/btn_edit_style"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/btn_relative_viewProfile"
+            android:layout_below="@+id/img_relative_profile"
+            android:id="@+id/btn_relative_editProfile"
+            android:text="edit profile"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_relative_skills"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/linear_realtive_buttonFrame"
+        android:textSize="18sp"
+        android:text="skills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/ch_relative_androidDev"
+        android:layout_below="@id/txt_relative_skills"
+        android:text="android developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/ch_relative_webDev"
+        android:layout_below="@id/ch_relative_androidDev"
+        android:text="web developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/ch_relative_phpDev"
+        android:layout_below="@id/ch_relative_webDev"
+        android:text="php developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_relative_city"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/ch_relative_phpDev"
+        android:textSize="18sp"
+        android:text="city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_relative_city"
+        android:id="@+id/rg_relative_cityGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:checked="true"
+            android:text="Tehran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Mashad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Shiraz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
